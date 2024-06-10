@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4F69FA2C16BED800065AD4 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F69F92C16BED800065AD4 /* MatchManager.swift */; };
+		EF4F69FC2C16BEE800065AD4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F69FB2C16BEE800065AD4 /* MenuView.swift */; };
+		EF4F69FE2C16BEFB00065AD4 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F69FD2C16BEFB00065AD4 /* Misc.swift */; };
+		EF4F6A002C17106000065AD4 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F69FF2C17106000065AD4 /* GameOverView.swift */; };
+		EF4F6A022C1720D800065AD4 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F6A012C1720D800065AD4 /* GameView.swift */; };
+		EF4F6A042C172F1800065AD4 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F6A032C172F1800065AD4 /* DrawingView.swift */; };
 		EF7494A82C15F654007A1B7A /* ImaginateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7494A72C15F654007A1B7A /* ImaginateApp.swift */; };
 		EF7494AA2C15F654007A1B7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7494A92C15F654007A1B7A /* ContentView.swift */; };
 		EF7494AC2C15F655007A1B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7494AB2C15F655007A1B7A /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF4F69F92C16BED800065AD4 /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
+		EF4F69FB2C16BEE800065AD4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		EF4F69FD2C16BEFB00065AD4 /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		EF4F69FF2C17106000065AD4 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		EF4F6A012C1720D800065AD4 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		EF4F6A032C172F1800065AD4 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		EF7494A42C15F654007A1B7A /* Imaginate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imaginate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7494A72C15F654007A1B7A /* ImaginateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginateApp.swift; sourceTree = "<group>"; };
 		EF7494A92C15F654007A1B7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,10 +106,16 @@
 		EF7494A62C15F654007A1B7A /* Imaginate */ = {
 			isa = PBXGroup;
 			children = (
+				EF4F69FF2C17106000065AD4 /* GameOverView.swift */,
+				EF4F6A012C1720D800065AD4 /* GameView.swift */,
 				EF7494A72C15F654007A1B7A /* ImaginateApp.swift */,
 				EF7494A92C15F654007A1B7A /* ContentView.swift */,
 				EF7494AB2C15F655007A1B7A /* Assets.xcassets */,
 				EF7494AD2C15F655007A1B7A /* Preview Content */,
+				EF4F69F92C16BED800065AD4 /* MatchManager.swift */,
+				EF4F69FB2C16BEE800065AD4 /* MenuView.swift */,
+				EF4F69FD2C16BEFB00065AD4 /* Misc.swift */,
+				EF4F6A032C172F1800065AD4 /* DrawingView.swift */,
 			);
 			path = Imaginate;
 			sourceTree = "<group>";
@@ -258,7 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF7494AA2C15F654007A1B7A /* ContentView.swift in Sources */,
+				EF4F69FC2C16BEE800065AD4 /* MenuView.swift in Sources */,
+				EF4F69FA2C16BED800065AD4 /* MatchManager.swift in Sources */,
+				EF4F6A042C172F1800065AD4 /* DrawingView.swift in Sources */,
+				EF4F69FE2C16BEFB00065AD4 /* Misc.swift in Sources */,
+				EF4F6A002C17106000065AD4 /* GameOverView.swift in Sources */,
 				EF7494A82C15F654007A1B7A /* ImaginateApp.swift in Sources */,
+				EF4F6A022C1720D800065AD4 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
