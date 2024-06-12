@@ -10,7 +10,7 @@ import SwiftUI
 struct GameView: View {
     @ObservedObject var matchManager: MatchManager
     @State var drawingGuess = ""
-    @State var eraserEnabled = ""
+    @State var eraserEnabled = false
     
     func makeGuess(){
         //TODO: submit the guess
@@ -28,8 +28,38 @@ struct GameView: View {
                     .scaleEffect(1.2)
                 VStack{
                     topBar
-                    
+                    ZStack{
+                        DrawingView(matchManager: matchManager, eraserEnabled: $eraserEnabled)
+                            .aspectRatio(1,contentMode: .fit)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.black, lineWidth: 10)
+                            )
+                        
+                        VStack{
+                            
+                            HStack{
+                                Spacer()
+                                if matchManager.currentlyDrawing{
+                                    Button {
+                                        eraserEnabled.toggle()
+                                        
+                                    }
+                                label:{
+                                    Image(systemName: eraserEnabled ? "eraser.fill":"eraser")
+                                        .font(.title)
+                                        .foregroundColor(Color("primaryPurple"))
+                                        .padding(.top,10)
+                                }
+                                }
+                                
+                            }
+                        }
+                            
+                    }
+                    .padding()
                 }
+                
             }
         }
        
